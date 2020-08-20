@@ -1,0 +1,270 @@
+/**
+ *
+ * General styles
+ *
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  width: 855px;
+  height: 300px;
+}
+
+/**
+ *
+ * Card styles
+ *
+ */
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  box-shadow: 15px 15px 15px hsl(210, 46%, 95%);
+}
+
+.card-img {
+  border-radius: 12px 0px 0px 12px;
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  color: hsl(217, 19%, 35%);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.desc-text {
+  color: hsl(214, 17%, 51%);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-footer-dark {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info {
+  height: 100%;
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}
+
+.avatar-img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.date {
+  color: hsl(212, 23%, 69%);
+  font-weight: 300;
+}
+
+.share {
+  height: 15px;
+  background-color: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.share-dark {
+  height: 15px;
+  background-color: hsl(214, 17%, 51%);
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.share-dark svg path {
+  fill: hsl(210, 46%, 95%);
+}
+
+.share-popup-hidden {
+  display: none;
+}
+
+.share-popup {
+  color: hsl(212, 23%, 69%);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: -115px;
+  display: flex;
+  padding: 0px 30px;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.share-items {
+  height: 20px;
+  padding: 15px 10px;
+}
+
+.share-items-text {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.arrow-down-hidden {
+  display: none;
+}
+
+.arrow-down {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
+}
+
+/**
+ *
+ * Responsive
+ *
+ */
+
+@media screen and (max-width: 899px) {
+  .container {
+    border-radius: 12px;
+    width: 90%;
+    height: 75%;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .card-img {
+    height: 40%;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .card-body {
+    flex-grow: 1;
+    line-height: 25px;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .card-text {
+    padding: 40px 40px 0 40px;
+  }
+
+  .card-footer-dark {
+    height: 15%;
+    position: relative;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .author {
+    margin: 15px 20px;
+  }
+
+  .share {
+    line-height: 10px;
+    position: unset;
+    margin: 15px 20px;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .share-popup {
+    align-items: center;
+    line-height: normal;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+  }
+
+  .header-text {
+    font-size: 16px;
+  }
+
+  .desc-text {
+    margin-bottom: 0px;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+}
+
+/**
+ *
+ * Footer styles
+ *
+ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
