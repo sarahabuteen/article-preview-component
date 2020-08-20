@@ -255,6 +255,10 @@ body {
   .arrow-down {
     display: none;
   }
+
+  .attribution {
+    display: none;
+  }
 }
 
 /**
